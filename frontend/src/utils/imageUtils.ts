@@ -1,14 +1,13 @@
-// Image utilities for Manara Recipes platform
-// Contextual food images with matching descriptions for the Manara submission
+// Image utilities for the recipe project
+// Uses existing image assets under `frontend/src/assets/images`
 
-import pastaImage from '../assets/images/pasta-carbonara.jpg';
-import chickenImage from '../assets/images/chicken-tikka.jpg';
-import cookiesImage from '../assets/images/cookies.jpg';
-import stirFryImage from '../assets/images/stir-fry.jpg';
-import heroImage from '../assets/images/hero-food.jpg';
+import pastaImage from '../assets/images/italian-pasta.jpg';
+import chickenImage from '../assets/images/american-bbq.jpg';
+import cookiesImage from '../assets/images/sample-recipe-1.jpg';
+import stirFryImage from '../assets/images/asian-stir-fry.jpg';
+import heroImage from '../assets/images/recipe-hero.jpg';
 
 export const recipeImages = {
-  // Food-themed images with contextual seeds
   images: {
     pasta: pastaImage,
     chicken: chickenImage,
@@ -16,42 +15,41 @@ export const recipeImages = {
     stirfry: stirFryImage,
     hero: heroImage
   },
-  
-  // Food-themed fallback gradients
+
   fallbackGradients: {
-    pasta: 'linear-gradient(135deg, #ff9a56 0%, #ffc371 100%)', // Warm pasta colors
-    chicken: 'linear-gradient(135deg, #ff7b54 0%, #ff6b3d 100%)', // Spicy curry colors  
-    cookies: 'linear-gradient(135deg, #8b4513 0%, #d2691e 100%)', // Chocolate brown colors
-    stirfry: 'linear-gradient(135deg, #32cd32 0%, #90ee90 100%)', // Fresh vegetable colors
-    default: 'linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%)' // Warm cooking colors
+    pasta: 'linear-gradient(135deg, #ff9a56 0%, #ffc371 100%)',
+    chicken: 'linear-gradient(135deg, #ff7b54 0%, #ff6b3d 100%)',
+    cookies: 'linear-gradient(135deg, #8b4513 0%, #d2691e 100%)',
+    stirfry: 'linear-gradient(135deg, #32cd32 0%, #90ee90 100%)',
+    default: 'linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%)'
   }
 };
 
 export const getRecipeImage = (recipeId: string) => {
   const imageMap: { [key: string]: { src: string; fallback: string; color: string } } = {
-    'pasta-carbonara': { 
+    'pasta-carbonara': {
       src: recipeImages.images.pasta,
       fallback: recipeImages.fallbackGradients.pasta,
       color: '#ff9a56'
     },
-    'chicken-tikka-masala': { 
+    'chicken-tikka-masala': {
       src: recipeImages.images.chicken,
       fallback: recipeImages.fallbackGradients.chicken,
       color: '#ff7b54'
     },
-    'chocolate-chip-cookies': { 
+    'chocolate-chip-cookies': {
       src: recipeImages.images.cookies,
       fallback: recipeImages.fallbackGradients.cookies,
       color: '#8b4513'
     },
-    'beef-stir-fry': { 
+    'beef-stir-fry': {
       src: recipeImages.images.stirfry,
       fallback: recipeImages.fallbackGradients.stirfry,
       color: '#32cd32'
     }
   };
-  
-  return imageMap[recipeId] || { 
+
+  return imageMap[recipeId] || {
     src: recipeImages.images.hero,
     fallback: recipeImages.fallbackGradients.default,
     color: '#ff6b35'
@@ -60,7 +58,6 @@ export const getRecipeImage = (recipeId: string) => {
 
 export const getHeroImage = () => recipeImages.images.hero;
 
-// CSS-based icons using Material-UI icons (no external assets needed)
 export const iconStyles = {
   cooking: {
     background: 'linear-gradient(45deg, #ff6b35, #ff8c42)',
