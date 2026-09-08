@@ -33,6 +33,26 @@ recipe-three-tier-architecture/
 └── README.md
 ```
 
+## Screenshots & diagrams
+
+### Architecture diagram
+
+![AWS architecture diagram](images/aws_manara_project_final_architecture.png)
+
+Diagram: high-level AWS three-tier architecture used in this project (S3 + CloudFront for the frontend, ALB + EC2 for the application layer, DynamoDB for storage).
+
+### App screenshots
+
+- Hero / landing banner: ![Hero image](frontend/src/assets/images/recipe-hero.jpg) — main landing banner used on the Home page.
+- Sample recipe card: ![Sample recipe](frontend/src/assets/images/sample-recipe-1.jpg) — example recipe shown in the gallery.
+- Cuisine examples: ![American BBQ](frontend/src/assets/images/american-bbq.jpg) ![Asian stir fry](frontend/src/assets/images/asian-stir-fry.jpg) ![Italian pasta](frontend/src/assets/images/italian-pasta.jpg) — sample images used for recipe categories and demo content.
+
+### Diagrams & references
+
+- AWS services overview: ![AWS services overview](frontend/src/assets/images/aws-services-overview.png) — reference image summarizing AWS services used in this architecture.
+- Project / Manara logo: ![Manara logo](frontend/src/assets/images/manara-logo.png) — branding used in documentation and slides.
+
+
 ## Quickstart (local development)
 
 Prerequisites: Docker, Node.js, Python 3.10+
