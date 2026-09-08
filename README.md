@@ -206,9 +206,19 @@ Security & production considerations 🔒
 - `terraform/` — Terraform examples
 - `docker-compose.yml` — local orchestration
 
-## Contributing 🤝
+## Upcoming features 🚧
 
-Open an issue with your proposed changes and create a feature branch. Keep changes focused and add tests where appropriate. Please follow standard GitHub flow and include clear commit messages.
+We're planning a set of improvements and features to make this reference project more complete and production-ready. Possible upcoming work includes:
+
+- Authentication & Authorization (JWT / OAuth2) for secured API endpoints 🔐
+- CI/CD pipeline examples (GitHub Actions) for automated builds, tests, and deployments ⚙️
+- Production-ready Dockerfile and deployment guide for ECS/EKS or a managed service 🧭
+- Observability: Prometheus metrics, Grafana dashboards, and centralized logging (CloudWatch / ELK) 📈
+- Database seeding and demo data scripts to populate example recipes and users 🧾
+- Multi-region and high-availability deployment patterns and autoscaling examples 🌍
+- Mobile-friendly frontend improvements and PWA support 📱
+
+If you'd like to see any of these prioritized, open an issue or request a feature.
 
 ## Special Thanks 🙏
 
