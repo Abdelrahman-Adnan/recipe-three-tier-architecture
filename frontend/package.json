@@ -1,0 +1,22 @@
+{
+  "name": "recipe-three-tier-architecture-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Recipe Three-Tier Architecture — AWS SAA demonstration project",
+  "author": "Abdelrahman Meghad",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4"
+  }
+}
