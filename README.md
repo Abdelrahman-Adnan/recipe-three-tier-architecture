@@ -10,20 +10,6 @@ About
 
 Recipe Three-Tier Architecture is a reference implementation of a three-tier web application designed for learning and experimentation. The project demonstrates a clear separation of concerns between presentation, application, and data layers, and includes example infrastructure-as-code to show how the pieces can be deployed on a cloud provider.
 
-Core components
-
-- Presentation: React + Vite frontend (TypeScript)
-- Application: FastAPI backend (Python)
-- Data: DynamoDB (example) with reference CloudFormation and Terraform configurations
-
-Project information
-
-- Repository: https://github.com/Abdelrahman-Adnan/recipe-three-tier-architecture
-- Primary language: TypeScript
-- Languages breakdown: TypeScript 72.3%, HCL 13.5%, Shell 6.4%, Python 3.7%, Dockerfile 1.9%, Makefile 1.6%, CSS 0.6%
-- Latest commit: `1d1dbfe` (see commits on GitHub)
-- License: MIT
-
 ## Repository structure
 
 ```
