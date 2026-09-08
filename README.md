@@ -6,13 +6,15 @@
 [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-Short, human-centered README for the Recipe Three-Tier Architecture project. This repository demonstrates a cloud-native three-tier web application with a React frontend, FastAPI backend, and AWS infrastructure examples.
+About
 
-## Project overview
+Recipe Three-Tier Architecture is a reference implementation of a three-tier web application designed for learning and experimentation. The project demonstrates a clear separation of concerns between presentation, application, and data layers, and includes example infrastructure-as-code to show how the pieces can be deployed on a cloud provider.
+
+Core components
 
 - Presentation: React + Vite frontend (TypeScript)
 - Application: FastAPI backend (Python)
-- Data: DynamoDB (example) and infrastructure-as-code samples (CloudFormation / Terraform)
+- Data: DynamoDB (example) with reference CloudFormation and Terraform configurations
 
 ## Repository structure
 
@@ -33,24 +35,11 @@ recipe-three-tier-architecture/
 └── README.md
 ```
 
-## Screenshots & diagrams
-
-### Architecture diagram
+## Architecture
 
 ![AWS architecture diagram](images/aws_manara_project_final_architecture.png)
 
-Diagram: high-level AWS three-tier architecture used in this project (S3 + CloudFront for the frontend, ALB + EC2 for the application layer, DynamoDB for storage).
-
-### App screenshots
-
-- Hero / landing banner: ![Hero image](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/recipe-hero.jpg) — main landing banner used on the Home page.
-- Sample recipe card: ![Sample recipe](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/sample-recipe-1.jpg) — example recipe shown in the gallery.
-- Cuisine examples: ![American BBQ](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/american-bbq.jpg) ![Asian stir fry](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/asian-stir-fry.jpg) ![Italian pasta](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/italian-pasta.jpg) — sample images used for recipe categories and demo content.
-
-### Diagrams & references
-
-- AWS services overview: ![AWS services overview](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/aws-services-overview.png) — reference image summarizing AWS services used in this architecture.
-- Project / Manara logo: ![Manara logo](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/manara-logo.png) — branding used in documentation and slides.
+High-level AWS three-tier architecture used in this project: static frontend hosting (S3) served through CloudFront, application layer behind an Application Load Balancer (ALB) running FastAPI services, and DynamoDB for storage. The `platform/` folder contains a CloudFormation template that illustrates these resources.
 
 
 ## Quickstart (local development)
