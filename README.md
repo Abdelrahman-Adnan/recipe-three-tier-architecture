@@ -43,14 +43,14 @@ Diagram: high-level AWS three-tier architecture used in this project (S3 + Cloud
 
 ### App screenshots
 
-- Hero / landing banner: ![Hero image](frontend/src/assets/images/recipe-hero.jpg) — main landing banner used on the Home page.
-- Sample recipe card: ![Sample recipe](frontend/src/assets/images/sample-recipe-1.jpg) — example recipe shown in the gallery.
-- Cuisine examples: ![American BBQ](frontend/src/assets/images/american-bbq.jpg) ![Asian stir fry](frontend/src/assets/images/asian-stir-fry.jpg) ![Italian pasta](frontend/src/assets/images/italian-pasta.jpg) — sample images used for recipe categories and demo content.
+- Hero / landing banner: ![Hero image](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/recipe-hero.jpg) — main landing banner used on the Home page.
+- Sample recipe card: ![Sample recipe](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/sample-recipe-1.jpg) — example recipe shown in the gallery.
+- Cuisine examples: ![American BBQ](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/american-bbq.jpg) ![Asian stir fry](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/asian-stir-fry.jpg) ![Italian pasta](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/italian-pasta.jpg) — sample images used for recipe categories and demo content.
 
 ### Diagrams & references
 
-- AWS services overview: ![AWS services overview](frontend/src/assets/images/aws-services-overview.png) — reference image summarizing AWS services used in this architecture.
-- Project / Manara logo: ![Manara logo](frontend/src/assets/images/manara-logo.png) — branding used in documentation and slides.
+- AWS services overview: ![AWS services overview](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/aws-services-overview.png) — reference image summarizing AWS services used in this architecture.
+- Project / Manara logo: ![Manara logo](https://raw.githubusercontent.com/Abdelrahman-Adnan/recipe-three-tier-architecture/main/frontend/src/assets/images/manara-logo.png) — branding used in documentation and slides.
 
 
 ## Quickstart (local development)
